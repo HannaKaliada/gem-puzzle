@@ -1,7 +1,7 @@
 # gem-puzzle
 1. [Задание](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-the-gem-puzzle.md)
 2. [Скриншот](http://prntscr.com/ruyg7b)
-3. [Демо](https://hannakaliada.github.io/gem-puzzle/)
+3. [Демо](https://hannakaliada.github.io/gem-puzzle/index.html)
 4. дата сдачи: 2020-04-07 / дата дедлайна: 07.04.2020
 5. Total 75/100
 
