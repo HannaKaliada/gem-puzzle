@@ -271,7 +271,8 @@ const GemPuzzle = {
         }
         // if assemble the puzzle
         if (JSON.stringify(this.properties.gameBlocksContent) === JSON.stringify(mixedBlocks)) {
-          setTimeout(() => alert(`Ура! Вы решили головоломку за ${localStorage.time} и ${localStorage.steps} ходов`), 2000); // eslint-disable-line no-alert
+          setTimeout(() => alert('Ура! Вы решили головоломку за ' + localStorage.time + ' и ' + localStorage.steps + ' ходов'), 1000); // eslint-disable-line no-alert
+          clearInterval(this.properties.time);
         }
       }
     });
