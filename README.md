@@ -4,6 +4,7 @@
 3. [Демо](https://hannakaliada.github.io/gem-puzzle/)
 4. дата сдачи: 2020-04-07 / дата дедлайна: 07.04.2020
 5. Total 75/100
+
 [Чек-лист проверки](https://rolling-scopes-school.github.io/checklist/)
 
 **Basic scope +30**
