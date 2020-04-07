@@ -280,7 +280,7 @@ const GemPuzzle = {
   timer() {
     this.properties.timer = true;
 
-    this.properties.time = setInterval(tick, 1500);
+    this.properties.time = setInterval(tick, 1000);
 
     function tick() {
       if (!localStorage.time && !localStorage.min) {
