@@ -70,7 +70,7 @@ const GemPuzzle = {
     document.body.appendChild(this.elements.game);
 
     document.querySelector('.steps-counter').textContent = `steps: ${localStorage.steps}`;
-    this.elements.timer.textContent = `time: ${localStorage.time}`;
+    this.elements.timer.textContent = 'time: '+ localStorage.time;
 
     this.elements.gameBlocks = document.querySelectorAll('.game-field__block__content');
   },
@@ -289,8 +289,8 @@ const GemPuzzle = {
       localStorage.sec = Number(localStorage.sec) + 1;
 
       if (localStorage.sec >= 60) {
-        localStorage.min += 1;
-        localStorage.sec -= 60;
+        localStorage.min = Number(localStorage.min) + 1;
+        localStorage.sec = Number(localStorage.sec) - 60;
       } else if (localStorage.sec < 10) {
         if (localStorage.min < 10) {
           localStorage.time = `0${localStorage.min}:0${localStorage.sec}`;
@@ -303,7 +303,7 @@ const GemPuzzle = {
         localStorage.time = `${localStorage.min}:${localStorage.sec}`;
       }
       // change time visually
-      document.querySelector('.timer').innerHTML = `time ${localStorage.time}`;
+      document.querySelector('.timer').innerHTML = `time: ${localStorage.time}`;
     }
 
     this.properties.time = setInterval(tick, 1000);
